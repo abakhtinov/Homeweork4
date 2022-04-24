@@ -19,19 +19,79 @@ public class Main {
 
         //Задание 3
 
-        int yearnow = 2012;
-        int x = 3;
-        int year2 = yearnow / x;
+        int yearnow = 2016;
+        int year2 = yearnow % 4;
         int year3 = yearnow % 100;
         int year400 = yearnow % 400;
-        if (year2==0 && year3!=0 && year400==0) {
+        if (year2==0 && year3!=0 || year400==0) {
             System.out.println(yearnow + " год является високосным");}
-        else if(year2!=0 && year3==0 && year400!=0) {
+        else {
             System.out.println(yearnow + " год не является високосным");
-            System.out.println(year2);
-            System.out.println(year3);
         }
 
+        //Задание 4
 
+
+        int deliveryDistance = 95;
+        int daysforDelivery = 1;
+        int daysForDelivery2060 = daysforDelivery+1;
+        int daysForDelivery60 = daysForDelivery2060+1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + daysforDelivery);}
+        else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.println(" Потребуется дней: " + daysForDelivery2060);}
+            else{
+                System.out.println("Потребуется дней: " + daysForDelivery60);
             }
+
+        //Задание 5
+
+
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+                System.out.println("Зима");
+                break;
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+                System.out.println("Весна");
+                break;
+            case 4:
+                System.out.println("Весна");
+                break;
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+                System.out.println("Лето");
+                break;
+            case 7:
+                System.out.println("Лето");
+                break;
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+                System.out.println("Осень");
+                break;
+            case 10:
+                System.out.println("Осень");
+                break;
+            case 11:
+                System.out.println("Осень");
+                break;
+            case 12:
+                System.out.println("Зима");
+                break;
+            default:
+                System.out.println("Некорректно указан месяц");}
+
+
+
+
+    }
+
+
 }
